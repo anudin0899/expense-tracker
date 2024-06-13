@@ -25,8 +25,8 @@ const Sidebar = () => {
                     <Link href={menu.path} key={index}>
                         <h2 className={`flex gap-2 items-center text-gray-500 
                         font-medium p-5 mb-2 cursor-pointer rounded-md
-                        hover:text-primary hover:bg-blue-100
-                        ${path == menu.path && 'text-primary bg-blue-100'}`}>
+                        hover:text-primary hover:bg-gray-200
+                        ${path == menu.path && 'text-primary bg-gray-200'}`}>
                             {menu.icon}
                             {menu.name}
                         </h2>
