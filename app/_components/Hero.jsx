@@ -31,12 +31,12 @@ const Hero = () => {
                     </div>
                 </div>
             </div>
-            <Image src='/dashboard.jpg'
+            {/* <Image src='/dashboard.jpg'
             alt='dashboard-image'
             width={1000}
             height={600}
             className='-mt-20 rounded-xl border-2'
-            />
+            /> */}
         </section>
     )
 }
