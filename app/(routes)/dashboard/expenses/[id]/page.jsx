@@ -7,7 +7,7 @@ import React, { useEffect, useState } from 'react'
 import BudgetItem from '../../budgets/_components/BudgetItem';
 import AddExpenses from '../_components/AddExpenses';
 import ExpenseListTable from '../_components/ExpenseListTable';
-import { Trash } from 'lucide-react';
+import { ArrowBigDown, ArrowBigLeftDash, ArrowLeft, Trash } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 import {
@@ -24,6 +24,7 @@ import {
 import { toast } from 'sonner';
 import { useRouter } from 'next/navigation';
 import EditBudget from '../_components/EditBudget';
+
 
 
 
@@ -76,7 +77,10 @@ const ExpensesScreen = ({ params }) => {
 
     return (
         <div className='p-10'>
-            <h2 className='text-2xl font-bold flex justify-between items-center'>My Expenses
+            <h2 className='text-2xl font-bold flex justify-between items-center'>
+                <div className='flex items-center gap-2 cursor-pointer' onClick={() => route.back()}>
+                    <ArrowLeft /> My Expenses
+                </div>
 
                 <div className='flex gap-2 items-center'>
 
@@ -123,7 +127,6 @@ const ExpensesScreen = ({ params }) => {
                 />
             </div>
             <div className='mt-4'>
-                <h2 className='font-bold text-lg'>Latest Expenses</h2>
                 <ExpenseListTable expensesList={expenseList} refreshData={() => getBudgetInfo()} />
             </div>
         </div>

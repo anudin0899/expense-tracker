@@ -12,7 +12,7 @@ const Sidebar = () => {
         { id: 1, name: 'Dashboard', icon: <LayoutGrid />, path: '/dashboard' },
         { id: 2, name: 'PiggyBank', icon: <PiggyBank />, path: '/dashboard/budgets' },
         { id: 3, name: 'Expense', icon: <ReceiptText />, path: '/dashboard/expenses' },
-        { id: 4, name: 'Upgrade', icon: <ShieldCheck />, path: '/dashboard/upgrade' },
+        // { id: 4, name: 'Upgrade', icon: <ShieldCheck />, path: '/dashboard/upgrade' },
     ];
 
     const path = useParams();
